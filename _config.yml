@@ -1,0 +1,12 @@
+# Site settings
+title: Liron Shimrony- Portfolio
+email: lsxliron@gmail.com
+description: This site shows my resume and previous projects
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: lsxliron
+github_username:  lsxliron
+
+# Build settings
+markdown: kramdown
+port: "8001"

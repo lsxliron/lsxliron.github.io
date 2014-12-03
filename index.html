@@ -1,11 +1,132 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test Page</title>
-    </head>
+---
+layout: custom
+---
 
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
-    
+<div class='firstPage page'>
+	<div class="container centerDiv">
+		<h1 class="nameHeader">Liron Shimrony</h1>
+	
+		<h2 class="descriptionHeader">Web Developer from New York</h2>
+	
+		<a id="getStartedBtn" type="button" class="getStartedButton btn btn-primary"><span style="margin-right:5%"class="glyphicon glyphicon-chevron-down"></span>Get Started</a>
+	</div>
+</div>
+
+
+<div id="aboutMePage" class="page secondPage">
+	<div class="container aboutMeDiv">
+		
+		<div style="margin-top:15%">
+			<h2> A LITTLE BIT ABOUT MYSELF</h2>
+			<div class="container lighterBox">
+				<h3>
+					My name is Liron Shimorny. I studies computer science at City College of New York. In my free time I like to build web applications using Python and Javascript.
+				</h3>
+			</div>
+			<a id="projectsBtn"type="button" class='getStartedButton btn btn-default'>BUTTON</a>
+		</div>
+	</div>
+</div>
+
+
+<div id="protfolioPage" class="page portfolio">
+	<div class="container projectsTable">
+		<div style="display:table-row;">
+			
+			<div class="shaderDiv";>
+				<div class="projectLabelDiv">
+					Semi Automatic Statistical Segmentation Tool
+				</div>
+				<img id='pyssaass' class='tableImg' src="img/pysaass1.png" />
+			</div>
+			
+			<div class="shaderDiv">
+				<div class="projectLabelDiv">
+					Peg Soliter Solver
+				</div>
+				<img class='tableImg' src="img/hiq1.png"/>
+			</div>
+			
+
+			<div class="shaderDiv">
+				<div class="projectLabelDiv">
+					Gobblet
+				</div>
+				<img class='tableImg' src="img/gobblet1.png"/>
+			</div>
+		</div>
+
+		
+
+
+
+		<div style="display:table-row;">
+			<div class="shaderDiv">
+				<div class="projectLabelDiv">
+					BookBay
+				</div>
+				<img class='tableImg' src="img/bookbay1.png"/>
+			</div>
+
+			<div class="shaderDiv">
+				<div class="projectLabelDiv">
+					PowerCalc
+				</div>
+				<img class='tableImg' src="img/powercalc.png"/>
+			</div>
+			<div class="shaderDiv">
+				<img class='tableImg' src="img/1.jpg"/>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#getStartedBtn').bind('click',function(){
+		$('body').animate({
+				scrollTop: $(window).scrollTop() + $('#aboutMePage').offset().top}, 1000)
+	});
+
+	$('#projectsBtn').bind('click',function(){
+		$('body').animate({
+				scrollTop: $(window).scrollTop() + $('#protfolioPage').offset().top}, 1000)
+	});
+
+	
+
+	//Project label fade in handler
+	$('.tableImg').mouseover(function(){
+
+		$(this).animate({opacity: 0.1}, 500)
+		$(this).parent().children('.projectLabelDiv').css('z-index', '1');
+		$(this).parent().children('.projectLabelDiv').css('visibility', 'visible');
+		$(this).parent().children('.projectLabelDiv').animate({opacity: 1}, 500);
+	});
+
+	//Project label fade out handler
+	$('.projectLabelDiv').mouseout(function(){
+		$(this).animate({opacity: 0}, 500);
+		$(this).parent().children('.tableImg').animate({opacity: 1}, 500, function(){
+			$(this).parent().children('.projectLabelDiv').css('visibility', 'hidden')
+		});
+
+	});
+		
+
+	
+})//END READY
+
+
+$(window).bind('load', function(){
+	$('.shaderDiv').height($('img').height())
+	$('.shaderDiv').width($('img').width())
+	
+})
+</script>
