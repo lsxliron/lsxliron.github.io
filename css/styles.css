@@ -9,7 +9,7 @@
 	color:white;
 	font-family: "Georgia", serif;
 	letter-spacing: 3px;
-	background-color: black;
+	background-image: url("../img/background/dark_mosaic.png");
 }
 .centerDiv{
 	position:relative;
@@ -35,6 +35,22 @@
 	margin-top:1%;
 	width:20%; 
 	height:6%;
+	position: relative;;
+}
+
+.portfilioButton{
+	margin-top:5%;
+	width:20%; 
+	height:10%;
+	color:#000000;
+	vertical-align: middle;
+	/*white-space:5px;*/
+	letter-spacing: 3px;
+	/*font-family: 'Alegreya Sans SC', sans-serif;*/
+	/*font-family: "Georgia", serif;*/
+	font-family: 'Roboto Slab', serif;
+	font-size:20px;
+	
 }
 
 .aboutMeDiv{
@@ -42,7 +58,8 @@
 	height: 100%;
 	text-align: center;
 	color:white;
-	background-image: url("../img/darker.png")
+	background-image: url("../img/background/binding_dark.png");
+	
 }
 
 .lighterBox{
@@ -56,7 +73,7 @@
 }
 
 .portfolio{
-	background-image: url("../img/lighter.png")
+	background-image: url("../img/background/classy_fabric.png")
 }
 
 .projectsTable{
@@ -64,7 +81,7 @@
 	display:table;
 	width:90%;
 	position:relative;
-	top:15%;
+	top:1%;
 	/*bottom:0px;*/
 	/*left:0px;
 	right:0px;
@@ -107,7 +124,127 @@
 	cursor:pointer;
 }
 
+.lead {
+	cursor: default; 
+	line-height: 2.00;
+}
+.hover-active:hover {
+  cursor: pointer;
+  background: rgba(80, 160, 250, .50);
+}
+.hover:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .20);
+}
 
+/*p, blockquote {*/
+  
+/*}*/
+
+blockquote {
+font-family: 'Roboto Slab', serif;
+  background: rgba(60, 71, 81, 0.2);
+  border: 1px dashed #888888;
+  box-shadow: 5px 5px 5px #0c0c0c;
+  letter-spacing: 2px;
+  font-size: 3em;
+  text-align: left;
+  vertical-align: middle;
+
+}
+h2{
+	
+}
+h3{
+	
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 3px;
+	color: #fcfcfc;
+	cursor: default;
+	margin: auto;
+}
+
+.aboutMeText{
+	text-align: left;
+	white-space: 7px;
+	line-height: 35px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: lighter;
+	letter-spacing: 2.5px;
+}
+
+i{margin-right: 10px;}
+.programmingProjectsPage{
+	background-image: url('../img/background/binding_dark.png')
+}
+a:link{color:#FFFFFF;}
+a:visited{color:#FFFFFF;}
+a:hover{text-decoration: none;}
 .pysaassID{}
-.hiqID{}
 .gobbletID{}
+.aboutMeLBL{
+	margin-left:20px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 4px;
+	font-size:20px;
+	font-weight: 500;
+}
+
+.webPortfolioHeading{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color:#CCCCCC; 
+	margin-top:3%;
+	font-size:3em;
+	position:relative; 
+	width:100%; 
+	font-weight: 100;
+	font-variant: small-caps;
+	text-align:center;
+}
+
+.webPortfolioButton{
+	position:relative;
+	margin-top:2%;
+	width:20%; 
+	height:10%;
+	color:#000000;
+	vertical-align: middle;
+	font-family: 'Roboto Slab', serif;
+	font-variant: small-caps;
+	font-size:2em;
+	letter-spacing: 2px;
+}
+
+
+.questionsButton{
+	position:relative;
+	margin-top:2%;
+	width:20%; 
+	height:10%;
+	color:#FFFFFF;
+	vertical-align: middle;
+	font-family: 'Roboto Slab', serif;
+	font-variant: small-caps;
+	font-size:2em;
+	letter-spacing: 4px;
+}
+
+.contactLabel
+{
+	font-family: 'Alegreya Sans SC', serif;
+	/*font-family: 'Roboto Slab', sans-serif;*/
+	color:white; 
+	font-size:3em; 
+	font-variant: small-caps;
+	width:100%; 
+	letter-spacing: 4px;
+	font-weight: lighter;
+	position:relative;
+	text-align:center
+
+}
+
+.profilesPage{
+	background-image: url('../img/background/binding_dark.png')
+
+}

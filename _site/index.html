@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 </head>
 
 	</head>
@@ -39,20 +40,20 @@
 	<div class="container aboutMeDiv">
 		
 		<div style="margin-top:15%">
-			<h2> A LITTLE BIT ABOUT MYSELF</h2>
+			<i class="fa fa-user fa-2x"><label class="aboutMeLBL"><span style="font-size:30px; font-weight:350">A</span> LITTLE BIT ABOUT MYSELF</label></i>
 			<div class="container lighterBox">
-				<h3>
-					My name is Liron Shimorny. I studies computer science at City College of New York. In my free time I like to build web applications using Python and Javascript.
+				<h3 class="aboutMeText">
+					My name is Liron Shimorny. I studied Computer Science at City College of New York. In my free time I like to build web applications using Python and Javascript.
 				</h3>
 			</div>
-			<a id="projectsBtn"type="button" class='getStartedButton btn btn-default'>BUTTON</a>
+			<button id="projectsBtn"type="button" class='btn btn-default portfilioButton'>View My Portfolio</button>
 		</div>
 	</div>
 </div>
 
 
 <div id="protfolioPage" class="page portfolio">
-	<label style="font-size:xx-large;position:relative; width:100%; text-align:center; color:white">Web Portfolio</label>
+	<label class="webPortfolioHeading">Web Portfolio</label>
 	<div class="container projectsTable">
 		<div style="display:table-row;">
 			
@@ -62,14 +63,6 @@
 				</div>
 				<img id='pyssaass' class='tableImg' src="img/pysaass1.png" />
 			</div>
-			
-			<!-- <div class="shaderDiv">
-				<div class="projectLabelDiv hiqID">
-					Peg Soliter Solver
-				</div>
-				<img class='tableImg' src="img/hiq1.png"/>
-			</div> -->
-			
 
 			<div class="shaderDiv">
 				<div class="projectLabelDiv gobbletID">
@@ -78,36 +71,88 @@
 				<img class='tableImg' src="img/gobblet1.png"/>
 			</div>
 		</div>
+	</div>
+	<div style="position:relative; width:100%; text-align:center">
+		<button type="button" class="webPortfolioButton btn btn-default" id="projectsBtn">Other Projects</a>
+	</div>
+</div>
 
+
+
+
+<div id="programmingProjects" class="page programmingProjectsPage" >
+	<label class="webPortfolioHeading" >Programming Projects</label>
+
+	<div style="display:table;color:white; border-collapse: separate; border-spacing:20px; width:100%;text-align:center; margin-top:5%">
 		
+		<div style="display:table-row;">
 
-
-<!-- 		<div style="display:table-row;">
-			<div class="shaderDiv">
-				<div class="projectLabelDiv">
-					BookBay
-				</div>
-				<img class='tableImg' src="img/bookbay1.png"/>
+			<div style="display:table-cell; width:50%">
+				<blockquote class="lead hover-active">
+					<a href="http://hiqsolver-csc44800.rhcloud.com" target="_blank">
+						<i class="fa fa-globe fa-2x"></i>
+						Peg Solitaire (Hi Q) Solver
+					</a>
+				</blockquote>
 			</div>
 
-			<div class="shaderDiv">
-				<div class="projectLabelDiv">
-					PowerCalc
-				</div>
-				<img class='tableImg' src="img/powercalc.png"/>
-			</div>
-			<div class="shaderDiv">
-				<img class='tableImg' src="img/1.jpg"/>
+			<div style="display:table-cell; width:50%">
+				<blockquote class="lead hover-active">
+					<a href="https://github.com/lsxliron/BookBay">
+						<i class="fa fa-github-alt fa-2x"></i>
+						BookBay
+					</a>
+				</blockquote>
 			</div>
 		</div>
- -->	</div>
+		
+		<div style="display:table-row;">
+			<div style="display:table-cell; width:50%">
+				<blockquote class="lead hover-active">
+					<a href="http://www.github.com/lsxliron/PowerCalc">
+						<i class="fa fa-github-alt fa-2x"></i>
+						PowerCalc
+					</a>
+				</blockquote>
+			</div>
+			
+			<div style="display:table-cell; width:50%;">
+				<blockquote class="lead hover-active">
+					<a href="https://github.com/lsxliron/Euler">
+						<i class="fa fa-github-alt fa-2x"></i>
+						Project Euler
+					</a>
+				</blockquote>
+			</div>
+
+		</div>
+
+	</div>
+	<div style="text-align:center; width:100%"><button type="button" class="questionsButton btn btn-primary">Any Question?</button></div>
+
 </div>
 
 
-<div id="programmingProjects" class="page secondPage">
-<label style="color:white; width:100%; text-align:center; font-size:xx-large">Programming Projects</label>
+
+
+<div id="contactMePage" class="page secondPage">
+<label class="contactLabel" style="margin-top:15%"><i class="fa fa-envelope"></i>Contact Me</label>
+<label class="contactLabel" style="margin-top:3%">LSXLIRON@GMAIL.COM</label>
+</div>
 </div>
 
+
+
+
+
+<div id="profilesPage" class="page profilesPage">
+	<label class="webPortfolioHeading" style="margin-bottom:10%">My Porjects And Profile</label>
+	<div style="width:100%; text-align:center">
+		<a href="http://www.github.com/lsxliron" target="_blank"><i style="color:white;" class="fa fa-github fa-5x"></i></a>
+		<a herf="http://www.bitbucket.org/lsxliron" target="_blank"><i style="color:white; margin-left:50px;" class="fa fa-bitbucket fa-5x"></i></a>
+		<a href="http://www.linkedin.com/pub/liron-shimrony/48/427/b7/" target="_blank"><i style="color:white;margin-left:70px;" class="fa fa-linkedin-square fa-5x"></i></a>
+</div>
+</div>
 
 
 
@@ -123,8 +168,17 @@
 
 
 
-<!-- PYSAAS MODAL CARUSEL -->
 
+
+
+
+
+
+
+
+
+
+<!-- PYSAAS MODAL CARUSEL -->
 <div class="modal fade" id="pysaassModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog" style="width:80%">
 		<div id="pysaassCarousel" class="carousel slide" data-ride="carousel" >
@@ -222,7 +276,7 @@
 			    <div class="item active">
 					<img src="img/CarouselImg/gobblet/g1.png">
 					<div class="carousel-caption">
-						<h3 style="color:red; margin-bottom:17%">3 Layers Tic Tac Toe Game</h3>
+						<h3 style="color:red; margin-bottom:17%">4 Layers Tic Tac Toe Game</h3>
 					</div>
 				</div>
 
@@ -274,7 +328,7 @@ $(document).ready(function(){
 
 	$('#projectsBtn').bind('click',function(){
 		$('body').animate({
-				scrollTop: $(window).scrollTop() + $('#protfolioPage').offset().top}, 1000)
+				scrollTop: $(window).scrollTop() + $('#aboutMePage').offset().top}, 1000)
 	});
 
 	
@@ -316,54 +370,6 @@ $(window).bind('load', function(){
 	$('.shaderDiv').width($('img').width())
 	
 })
-
-
-/*
-CARUSEL
--------
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-*/
-
-
-
-
 </script>
 
 
