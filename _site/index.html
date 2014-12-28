@@ -15,17 +15,35 @@
   <link rel="alternate" type="application/atom+xml" title="Liron Shimrony- Portfolio" href="http://yourdomain.com/feed.xml" />
 
   <script type="text/javascript" src='jquery/jquery-2.1.1.js'></script>
-  <script type="text/javascript" src='bootstrap/js/bootstrap.js'></script>
+  <script type="text/javascript" src='bootstrap/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src='jquery.transit/jquery.transit.js'></script>
+
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="startbootstrap-simple-sidebar/css/simple-sidebar.css" />
 </head>
 
 	</head>
 	<body>
-	<div class='firstPage page'>
+	<div class="toggled" id="wrapper">
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+		<li style="color:white"> <i class="fa fa-thumbs-up"> </i>Welcome</li>
+		<li style="color:white"> <i class="fa fa-user"> </i> About Me</li>
+		<li style="color:white"> <i class="fa fa-picture-o"> </i>Portfolio</li>
+		<li style="color:white"> <i class="fa fa-flask"></i> Projects</li>
+		<li style="color:white"> <i class="fa fa-envelope"> </i>Contant</li>
+		<li style="color:white"> <i class="fa fa-link"></i> Links</li>
+		</ul>
+	</div>
+</div>
+
+<button id="menuToggle" type="button" class="btn btn-default" style="z-index:1000; color:black; margin-top:35px; margin-left:150px; opacity:0.5; position:fixed"><i class="fa fa-bars"></i></button>
+
+<div class='firstPage page'>
 	<div class="container centerDiv">
 		<h1 class="nameHeader">Liron Shimrony</h1>
 	
@@ -98,7 +116,7 @@
 
 			<div style="display:table-cell; width:50%">
 				<blockquote class="lead hover-active">
-					<a href="https://github.com/lsxliron/BookBay">
+					<a href="https://github.com/lsxliron/BookBay" target="_blank">
 						<i class="fa fa-github-alt fa-2x"></i>
 						BookBay
 					</a>
@@ -109,7 +127,7 @@
 		<div style="display:table-row;">
 			<div style="display:table-cell; width:50%">
 				<blockquote class="lead hover-active">
-					<a href="http://www.github.com/lsxliron/PowerCalc">
+					<a href="http://www.github.com/lsxliron/PowerCalc" target="_blank">
 						<i class="fa fa-github-alt fa-2x"></i>
 						PowerCalc
 					</a>
@@ -118,7 +136,7 @@
 			
 			<div style="display:table-cell; width:50%;">
 				<blockquote class="lead hover-active">
-					<a href="https://github.com/lsxliron/Euler">
+					<a href="https://github.com/lsxliron/Euler" target="_blank">
 						<i class="fa fa-github-alt fa-2x"></i>
 						Project Euler
 					</a>
@@ -148,9 +166,9 @@
 <div id="profilesPage" class="page profilesPage">
 	<label class="webPortfolioHeading" style="margin-bottom:10%">My Porjects And Profile</label>
 	<div style="width:100%; text-align:center">
-		<a href="http://www.github.com/lsxliron" target="_blank"><i style="color:white;" class="fa fa-github fa-5x"></i></a>
-		<a herf="http://www.bitbucket.org/lsxliron" target="_blank"><i style="color:white; margin-left:50px;" class="fa fa-bitbucket fa-5x"></i></a>
-		<a href="http://www.linkedin.com/pub/liron-shimrony/48/427/b7/" target="_blank"><i style="color:white;margin-left:70px;" class="fa fa-linkedin-square fa-5x"></i></a>
+		<a href="http://www.github.com/lsxliron" class="profilesIcons" target="_blank"><i style="color:white;" class="fa fa-github fa-5x"></i></a>
+		<a href="http://www.bitbucket.org/lsxliron" class="profilesIcons" target="_blank"><i style="color:white; margin-left:50px;" class="fa fa-bitbucket fa-5x"></i></a>
+		<a href="http://www.linkedin.com/pub/liron-shimrony/48/427/b7/" class="profilesIcons" target="_blank"><i style="color:white;margin-left:70px;" class="fa fa-linkedin-square fa-5x"></i></a>
 </div>
 </div>
 
@@ -361,6 +379,25 @@ $(document).ready(function(){
 
 	})
 
+	$(".descriptionHeader").hover(function(){
+		$(this).transition({scale:1.2})
+	}, 
+	function(){
+		$(this).transition({scale:1})
+	});
+
+	$(".profilesIcons").hover(function(){
+		$(this).children().transition({rotate:45})
+
+	},
+	function(){
+		$(this).children().transition({rotate:0})
+	})
+
+	$('#menuToggle').bind('click',function(e){
+		 e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+	})
 	
 })//END READY
 
@@ -368,7 +405,8 @@ $(document).ready(function(){
 $(window).bind('load', function(){
 	$('.shaderDiv').height($('img').height())
 	$('.shaderDiv').width($('img').width())
-	
+
+
 })
 </script>
 
