@@ -38,9 +38,9 @@
 	position: relative;
 }
 
-.portfilioButton{
-	margin-top:5%;
-	width:20%; 
+.portfolioButton{
+	margin-top:3%;
+	width:225px; 
 	height:10%;
 	color:#000000;
 	vertical-align: middle;
@@ -93,7 +93,8 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-
+	width: 100%;
+	cursor:pointer;
 }
 
 .shaderDiv{
@@ -101,27 +102,32 @@
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	background-color: black;
-	white-space: 3px;
-	margin-bottom: 2%;
-	display:table-cell;
+	width:100%; 
+	font-family: 'Alegreya Sans SC', serif;
+	font-weight: 200;
+	/*font-size: 5em;*/
+	letter-spacing: 4.5px;
+	/*font-variant: small-caps;*/
+
+
+
+	/*white-space: 3px;*/
+	/*margin-bottom: 2%;*/
+	/*display:table-cell;*/
 	position:relative;
 }
 
 
 .projectLabelDiv{
-	text-align:center;
-	position:absolute;
-	color:white;
-	width:100%; 
-	font-size:xx-large; 
-	height:100%; 
-	margin-left:auto; 
-	margin-right:auto;
-	z-index: -10;
-	opacity: 0;
-	visibility: hidden;
-	vertical-align: middle;
-	cursor:pointer;
+	opacity:0; 
+	position:absolute; 
+	color:white; 
+	text-align:center; 
+	margin-top:15%; 
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 5px;
+	font-weight: 100;
+	font-size:2em;
 }
 
 .lead {
@@ -171,6 +177,8 @@ h3{
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: lighter;
 	letter-spacing: 2.5px;
+	margin-left: 25px;
+
 }
 
 i{margin-right: 10px;}

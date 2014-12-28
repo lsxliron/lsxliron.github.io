@@ -29,8 +29,8 @@
 	</head>
 	<body>
 	<div class="toggled" id="wrapper">
-	<div id="sidebar-wrapper">
-		<ul class="sidebar-nav">
+	<div id="sidebar-wrapper" style="background-color:#1A1A1A; right:0;">
+		<ul class="sidebar-nav" style="margin-top:25%">
 		<li style="color:white"> <i class="fa fa-thumbs-up"> </i>Welcome</li>
 		<li style="color:white"> <i class="fa fa-user"> </i> About Me</li>
 		<li style="color:white"> <i class="fa fa-picture-o"> </i>Portfolio</li>
@@ -41,7 +41,7 @@
 	</div>
 </div>
 
-<button id="menuToggle" type="button" class="btn btn-default" style="z-index:1000; color:black; margin-top:35px; margin-left:150px; opacity:0.5; position:fixed"><i class="fa fa-bars"></i></button>
+<button id="menuToggle" type="button" class="btn btn-default" style="z-index:1000; color:black; margin-top:35px; margin-left:50px; opacity:0.5; position:fixed"><i class="fa fa-bars"></i></button>
 
 <div class='firstPage page'>
 	<div class="container centerDiv">
@@ -57,14 +57,14 @@
 <div id="aboutMePage" class="page secondPage">
 	<div class="container aboutMeDiv">
 		
-		<div style="margin-top:15%">
+		<div style="margin-top:30px">
 			<i class="fa fa-user fa-2x"><label class="aboutMeLBL"><span style="font-size:30px; font-weight:350">A</span> LITTLE BIT ABOUT MYSELF</label></i>
 			<div class="container lighterBox">
 				<h3 class="aboutMeText">
-					My name is Liron Shimorny. I studied Computer Science at City College of New York. In my free time I like to build web applications using Python and Javascript.
+					My name is Liron Shimrony. I studied Computer Science at City College of New York. In my free time I like to build web applications using Python and Javascript.
 				</h3>
 			</div>
-			<button id="projectsBtn"type="button" class='btn btn-default portfilioButton'>View My Portfolio</button>
+			<button id="projectsBtn"type="button" class='btn btn-default portfolioButton'>View My Portfolio</button>
 		</div>
 	</div>
 </div>
@@ -73,20 +73,35 @@
 <div id="protfolioPage" class="page portfolio">
 	<label class="webPortfolioHeading">Web Portfolio</label>
 	<div class="container projectsTable">
-		<div style="display:table-row;">
-			
-			<div class="shaderDiv";>
-				<div class="projectLabelDiv pysaassID">
-					Semi Automatic Statistical Segmentation Tool
+		<div style="display:table-row">
+			<div style="display:table-cell">
+			<!-- <div class="shaderDiv"> -->
+				<!-- <div class="projectLabelDiv pysaassID"> -->
+					<!-- Semi Automatic Statistical Segmentation Tool -->
+				<!-- </div> -->
+				
+				<div class="shaderDiv pysaassID">
+					<span style="display:inline-block">
+					<label class="projectLabelDiv"> Semi Automatic Statistical Segmentation Tool</label>
+						<img id='pyssaass' class='tableImg' src="img/pysaass1.png" style="z-index" />
+					</span>
 				</div>
-				<img id='pyssaass' class='tableImg' src="img/pysaass1.png" />
+
+				
 			</div>
 
-			<div class="shaderDiv">
-				<div class="projectLabelDiv gobbletID">
-					Gobblet
+			<div style="display:table-cell;>">
+			<!-- <div class="shaderDiv"> -->
+				<!-- <div class="projectLabelDiv gobbletID"> -->
+					<!-- Gobblet -->
+				<!-- </div> -->
+				<div class="shaderDiv gobbletID">
+					<span style="display:inline-block">
+					<label class="projectLabelDiv" style="margin-left:9%; margin-top:19%"> Gobblet - Human Vs. PC </label>
+						<img class='tableImg' src="img/gobblet1.png"/>
+					</span>
 				</div>
-				<img class='tableImg' src="img/gobblet1.png"/>
+				
 			</div>
 		</div>
 	</div>
@@ -146,7 +161,7 @@
 		</div>
 
 	</div>
-	<div style="text-align:center; width:100%"><button type="button" class="questionsButton btn btn-primary">Any Question?</button></div>
+	<div style="text-align:center; width:100%"><button type="button" class="questionsButton btn btn-primary">Any Questions?</button></div>
 
 </div>
 
@@ -339,6 +354,7 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
+	
 	$('#getStartedBtn').bind('click',function(){
 		$('body').animate({
 				scrollTop: $(window).scrollTop() + $('#aboutMePage').offset().top}, 1000)
@@ -349,25 +365,38 @@ $(document).ready(function(){
 				scrollTop: $(window).scrollTop() + $('#aboutMePage').offset().top}, 1000)
 	});
 
+
 	
 
 	//Project label fade in handler
-	$('.tableImg').mouseover(function(){
+	// $('.tableImg').mouseover(function(){
 
-		$(this).animate({opacity: 0.1}, 500)
-		$(this).parent().children('.projectLabelDiv').css('z-index', '1');
-		$(this).parent().children('.projectLabelDiv').css('visibility', 'visible');
-		$(this).parent().children('.projectLabelDiv').animate({opacity: 1}, 500);
-	});
+		// $(this).animate({opacity: 0.1}, 500)
+		// $(this).parent().children('.projectLabelDiv').css('z-index', '1');
+		// $(this).parent().children('.projectLabelDiv').css('visibility', 'visible');
+		// $(this).parent().children('.projectLabelDiv').animate({opacity: 1}, 500);
+
+	// });
+	$('.tableImg').hover(function(){
+		$(this).transition({rotateX:'180deg', opacity:0})
+		$(this).parents('.shaderDiv').transition({rotateX:'180deg'})
+		$(this).siblings('.projectLabelDiv').transition({rotateX:'180deg', opacity:1})
+	},
+		function(){
+			$(this).transition({rotateX:'0deg', opacity:1})
+			$(this).parents('.shaderDiv').transition({rotateX:'0deg'})
+			$(this).siblings('.projectLabelDiv').transition({rotateX:'0deg', opacity:0})
+		}
+	)
 
 	//Project label fade out handler
-	$('.projectLabelDiv').mouseout(function(){
-		$(this).animate({opacity: 0}, 500);
-		$(this).parent().children('.tableImg').animate({opacity: 1}, 500, function(){
-			$(this).parent().children('.projectLabelDiv').css('visibility', 'hidden')
-		});
+	// $('.projectLabelDiv').mouseout(function(){
+	// 	$(this).animate({opacity: 0}, 500);
+	// 	$(this).parent().children('.tableImg').animate({opacity: 1}, 500, function(){
+	// 		$(this).parent().children('.projectLabelDiv').css('visibility', 'hidden')
+	// 	});
 
-	});
+	// });
 		
 	$('.pysaassID').bind('click',function(){
 		$('#pysaassCarouselBtn').click();
@@ -408,6 +437,8 @@ $(window).bind('load', function(){
 
 
 })
+
+
 </script>
 
 
