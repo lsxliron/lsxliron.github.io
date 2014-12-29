@@ -43,16 +43,16 @@
 
 .portfolioButton{
 	/*margin-top:3%;*/
-	margin-top: 100px;
-	width:250px; 
-	height:10%;
-	color:#000000;
+	margin-top: 13%;
+	width:15%; 
+	height:4%;
+	/*color:#000000;*/
 	vertical-align: middle;
 	letter-spacing: 3px;
 	font-family: 'Alegreya', sans-serif;
 	/*font-family: "Georgia", serif;*/
 	/*font-family: 'Roboto Slab', serif;*/
-	font-size:20px;
+	font-size:2vh;
 	
 }
 
@@ -66,8 +66,18 @@
 }
 
 .lighterBox{
-	width:50%;
+	max-width:50%;
 	margin-top: 10%;
+	font-family: "Georgia", serif;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #999;
+	background-image: url("../img/lighter.png")
+}
+
+.aboutMeBox{
+	max-width:40%;
+	margin-top: 15%;
 	font-family: "Georgia", serif;
 	border-style: dashed;
 	border-width: 1px;
@@ -217,8 +227,8 @@ a:hover{text-decoration: none;}
 	position:relative;
 	margin-top:2%;
 	width:20%; 
-	height:10%;
-	color:#000000;
+	max-height:5%;
+	color:#FFFFFF;
 	vertical-align: middle;
 	font-family: 'Roboto Slab', serif;
 	font-variant: small-caps;
@@ -230,8 +240,8 @@ a:hover{text-decoration: none;}
 .questionsButton{
 	position:relative;
 	margin-top:2%;
-	width:20%; 
-	height:10%;
+	max-width:20%; 
+	max-height:6%;
 	color:#FFFFFF;
 	vertical-align: middle;
 	font-family: 'Roboto Slab', serif;
@@ -295,4 +305,9 @@ i{color:white;}
 .programmingProjectsDiv{
 	display:table-cell;
 	width:50%;
+}
+
+
+.carousel-caption {
+  margin-bottom:3%;
 }

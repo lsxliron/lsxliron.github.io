@@ -59,12 +59,12 @@
 		
 		<div style="margin-top:30px">
 			<i class="fa fa-user fa-2x"><label class="aboutMeLBL"><span style="font-size:30px; font-weight:350">A</span> LITTLE BIT ABOUT MYSELF</label></i>
-			<div class="container lighterBox">
+			<div class="container aboutMeBox">
 				<h3 class="aboutMeText">
 					My name is Liron Shimrony. I studied Computer Science at City College of New York. In my free time I like to build web applications using Python and Javascript.
 				</h3>
 			</div>
-			<button id="projectsBtn"type="button" class='btn btn-default portfolioButton'>View My Portfolio</button>
+			<button id="projectsBtn"type="button" class='btn btn-primary portfolioButton'>View My Portfolio</button>
 		</div>
 	</div>
 </div>
@@ -83,7 +83,7 @@
 				<div class="shaderDiv pysaassID">
 					<span style="display:inline-block">
 					<label class="projectLabelDiv"> Semi Automatic Statistical Segmentation Tool</label>
-						<img id='pyssaass' class='tableImg' src="img/pysaass1.png" style="z-index" />
+						<img id='pyssaass' class='tableImg' src="img/p1.png" style="z-index" />
 					</span>
 				</div>
 
@@ -97,7 +97,7 @@
 				<!-- </div> -->
 				<div class="shaderDiv gobbletID">
 					<span style="display:inline-block">
-					<label class="projectLabelDiv" style="margin-left:9%; margin-top:19%"> Gobblet - Human Vs. PC </label>
+					<label class="projectLabelDiv" style="margin-left:32%; margin-top:19%;"> Gobblet <br> Human Vs. PC </label>
 						<img class='tableImg' src="img/gobblet1.png"/>
 					</span>
 				</div>
@@ -106,7 +106,7 @@
 		</div>
 	</div>
 	<div style="position:relative; width:100%; text-align:center">
-		<button type="button" class="webPortfolioButton btn btn-default" id="webPortfolioBtn">Other Projects</a>
+		<button type="button" class="webPortfolioButton btn btn-primary" id="webPortfolioBtn">Other Projects</a>
 	</div>
 </div>
 
@@ -412,11 +412,13 @@ $(document).ready(function(){
 	// });
 		
 	$('.pysaassID').bind('click',function(){
+		$(this).children().find('.tableImg').trigger('mouseleave')
 		$('#pysaassCarouselBtn').click();
 
 	})
 
 	$('.gobbletID').bind('click',function(){
+		$(this).children().find('.tableImg').trigger('mouseleave')
 		$('#gobbletCarouselBtn').click();
 
 	})
