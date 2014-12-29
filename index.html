@@ -328,7 +328,7 @@ layout: custom
 <script type="text/javascript">
 
 $(document).ready(function(){
-	alert(window.navigator.userAgent)
+	alert(window.navigator.userAgent.toLowerCase().search('mobile.*?'))
 	$('#welcomePageLi').bind('click',function(){
 		$('body').animate({
 				scrollTop:  0}, 1000)
