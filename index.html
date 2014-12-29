@@ -35,7 +35,7 @@ layout: custom
 			<i class="fa fa-user fa-2x"><label class="aboutMeLBL"><span style="font-size:30px; font-weight:350">A</span> LITTLE BIT ABOUT MYSELF</label></i>
 			<div class="container aboutMeBox">
 				<h3 class="aboutMeText">
-					My name is Liron Shimrony. I studied Computer Science at City College of New York. In my free time I like to build web applications using Python and Javascript.
+					My name is Liron Shimrony. I studied Computer Science at City College of New York. On my free time I like to build web applications using Python and Javascript.
 				</h3>
 			</div>
 			<button id="projectsBtn"type="button" class='btn btn-primary portfolioButton'>View My Portfolio</button>
@@ -328,6 +328,7 @@ layout: custom
 <script type="text/javascript">
 
 $(document).ready(function(){
+	alert(window.navigator.userAgent)
 	$('#welcomePageLi').bind('click',function(){
 		$('body').animate({
 				scrollTop:  0}, 1000)
