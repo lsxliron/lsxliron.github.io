@@ -1,0 +1,25 @@
+@font-face{
+	font-family: 'Alegreya';
+	src:url('../fonts/AlegreyaSC-Regular.otf');
+}
+
+.page{
+	width:100%;
+	height: 100%;
+	background-color: black;
+}
+.centerDiv{
+	text-align: center;
+}
+
+h1,h2{
+	color:white;
+	font-family: 'Alegreya';
+}
+
+h2{
+	font-size: 2em;
+}
+
+
+
