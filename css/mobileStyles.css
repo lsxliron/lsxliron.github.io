@@ -8,25 +8,13 @@
 	height: 100%;
 	background-color: black;
 }
-.centerDiv{
-	text-align: center;
-}
-
-#aboutMePage{
-	background-image: url('../img/background/binding_dark.png')
-}
-
-#welcomePage{
-	background-image: url('../img/background/dark_mosaic.png')
-}
 
 .greyBox{
 	background-image: url('../img/background/classy_fabric.png');
 	color:white;
 	border-style: dashed;
 	border-width: 1px;
-	box-shadow: 5px 5px 5px #0c0c0c;
-	
+	box-shadow: 5px 5px 5px #0c0c0c;	
 }
 
 .aboutMeText{
@@ -35,21 +23,7 @@
 	font-family: "Alegreya";
 	text-align: left;
 	padding-left: 15px;
-	padding-right: 15px;
-	
-}
-
-.portfolioButton{
-	margin-top: 35%;
-}
-
-h1,h2{
-	color:white;
-	font-family: 'Alegreya';
-}
-
-h2{
-	font-size: 2em;
+	padding-right: 15px;	
 }
 
 #aboutMeHeader{
@@ -58,9 +32,7 @@ h2{
 	font-weight: lighter;
 }
 
-.aboutMeBox{
-	background-image: url("../../img/lighter.png")
-}
+
 
 .webPortfolioHeading{
 	width:100%;
@@ -68,13 +40,13 @@ h2{
 	font-size: 1.5em;
 	color:white;
 	margin-top: 5%;
-	margin-bottom:5%;
+	margin-bottom:10%;
 	font-family: "Alegreya"
 }
 
 .webPortfolioImage{
 	margin-top: 2%;
-	margin-bottom: 8%;
+	margin-bottom: 4%;
 	width:80%;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -84,11 +56,6 @@ h2{
 	width:100%; 
 	text-align:center; 
 	margin-top:5%;
-}
-
-
-.webPortfolioButton{
-	margin-top:18%;
 }
 
 .programmingProjectsDiv{
@@ -113,14 +80,6 @@ h2{
 	text-align: center;
 }
 
-#programmingProjects{
-	background-image: url('../img/background/binding_dark.png');
-}
-
-#contactMePage{
-	background-image: url('../img/background/classy_fabric.png');
-}
-
 .contactLabel{
 	font-size:1em;
 	margin-top: 10%;
@@ -131,34 +90,18 @@ h2{
 .contactDiv{
 	width:100%;
 	text-align: center;
-	/*margin-top: 15%;*/
 }
 
 .emailLabel{
 	font-family: "Alegreya";
 	margin-top:10%;
-	font-size:2em;
-}
-
-#profilesPage{
-	background-image: url('../img/background/binding_dark.png');
+	font-size:1.7em;
 }
 
 .glyphDiv{
 	margin-top: 10%;
 	width:100%;
 	text-align: center;
-}
-label{color:white;}
-a:link{color:white;}
-a:visited{color:white;}
-a:hover{text-decoration: none}
-a{color:white;}
-i{color:white; vertical-align: middle;}
-
-
-#menuOptions{
-	display: none;
 }
 
 .swipeForMenuLabel{
@@ -170,6 +113,42 @@ i{color:white; vertical-align: middle;}
 	font-family: "Alegreya"
 }
 
-#pysaassModal{background:rgba(0,0,0,0.3);}
+h1,h2{
+	color:white;
+	font-family: 'Alegreya';
+}
+.programmingProjectsButtonDiv{
+	text-align:center; 
+	width:100%;
+}
+
+i{
+	color:white; 
+	vertical-align: middle;
+}
+
+.aboutMeBox{background-image: url("../../img/lighter.png")}
+.webPortfolioButton{margin-top:5%;}
+.portfolioButton{margin-top: 6%;}
 .modal-title{color: white;}
 .modal-content{background-color:rgba(43,49,64,0.5)}
+.centerDiv{text-align: center;}
+
+#aboutMePage{background-image: url('../img/background/binding_dark.png');}
+#welcomePage{background-image: url('../img/background/dark_mosaic.png');}
+#programmingProjects{background-image: url('../img/background/binding_dark.png');}
+#contactMePage{background-image: url('../img/background/classy_fabric.png');}
+#profilesPage{background-image: url('../img/background/binding_dark.png');}
+#menuOptions{display: none;}
+#pysaassModal{background:rgba(0,0,0,0.3);}
+#aboutMeBox{max-width: 80%}
+#programmingProjectsButton{margin-top: 15%;}
+h2{font-size: 2em;}
+label{color:white;}
+a:link{color:white;}
+a:visited{color:white;}
+a:hover{text-decoration: none}
+a{color:white;}
+
+
+
