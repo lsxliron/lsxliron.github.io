@@ -206,10 +206,11 @@ a:hover{text-decoration: none;}
 .pysaassID{}
 .gobbletID{}
 .aboutMeLBL{
+	margin-top: 5%;
 	margin-left:20px;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	letter-spacing: 4px;
-	font-size:20px;
+	font-size:4vh;
 	font-weight: 500;
 }
 
@@ -217,7 +218,7 @@ a:hover{text-decoration: none;}
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color:#CCCCCC; 
 	margin-top:3%;
-	font-size:3em;
+	font-size:4em;
 	position:relative; 
 	width:100%; 
 	font-weight: 100;

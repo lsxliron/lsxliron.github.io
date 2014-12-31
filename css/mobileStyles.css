@@ -12,6 +12,37 @@
 	text-align: center;
 }
 
+#aboutMePage{
+	background-image: url('../img/background/binding_dark.png')
+}
+
+#welcomePage{
+	background-image: url('../img/background/dark_mosaic.png')
+}
+
+.greyBox{
+	background-image: url('../img/background/classy_fabric.png');
+	color:white;
+	border-style: dashed;
+	border-width: 1px;
+	box-shadow: 5px 5px 5px #0c0c0c;
+	
+}
+
+.aboutMeText{
+	margin-top: 35%;
+	font-size: 1.4em;
+	font-family: "Alegreya";
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+.portfolioButton{
+	margin-top: 35%;
+}
+
 h1,h2{
 	color:white;
 	font-family: 'Alegreya';
@@ -21,5 +52,124 @@ h2{
 	font-size: 2em;
 }
 
+#aboutMeHeader{
+	color:white;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+.aboutMeBox{
+	background-image: url("../../img/lighter.png")
+}
+
+.webPortfolioHeading{
+	width:100%;
+	text-align: center;
+	font-size: 1.5em;
+	color:white;
+	margin-top: 5%;
+	margin-bottom:5%;
+	font-family: "Alegreya"
+}
+
+.webPortfolioImage{
+	margin-top: 2%;
+	margin-bottom: 8%;
+	width:80%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.carLabel{
+	width:100%; 
+	text-align:center; 
+	margin-top:5%;
+}
 
 
+.webPortfolioButton{
+	margin-top:18%;
+}
+
+.programmingProjectsDiv{
+	background-image: url('../img/background/classy_fabric.png');
+	color:white;
+	border-style: dashed;
+	border-width: 1px;
+	width:70%;
+	margin-left:0px;
+	margin-right:0px;
+	margin:auto;
+	margin-top:6%;
+	height:8%;
+	vertical-align: middle;
+	font-family: 'Alegreya';	
+	padding:2%;
+	font-size: 1.1em;
+}
+
+.programmingProjects{
+	width:100%;
+	text-align: center;
+}
+
+#programmingProjects{
+	background-image: url('../img/background/binding_dark.png');
+}
+
+#contactMePage{
+	background-image: url('../img/background/classy_fabric.png');
+}
+
+.contactLabel{
+	font-size:1em;
+	margin-top: 10%;
+	margin-left: 8px;
+	margin-top:50%;
+}
+
+.contactDiv{
+	width:100%;
+	text-align: center;
+	/*margin-top: 15%;*/
+}
+
+.emailLabel{
+	font-family: "Alegreya";
+	margin-top:10%;
+	font-size:2em;
+}
+
+#profilesPage{
+	background-image: url('../img/background/binding_dark.png');
+}
+
+.glyphDiv{
+	margin-top: 10%;
+	width:100%;
+	text-align: center;
+}
+label{color:white;}
+a:link{color:white;}
+a:visited{color:white;}
+a:hover{text-decoration: none}
+a{color:white;}
+i{color:white; vertical-align: middle;}
+
+
+#menuOptions{
+	display: none;
+}
+
+.swipeForMenuLabel{
+	width:100%;
+	margin-top:30%;
+	text-align:center;
+	bottom:0px;
+	font-size: 0.9em;
+	font-family: "Alegreya"
+}
+
+#pysaassModal{background:rgba(0,0,0,0.3);}
+.modal-title{color: white;}
+.modal-content{background-color:rgba(43,49,64,0.5)}

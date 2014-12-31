@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type="text/javascript" src='../jquery/jquery-2.1.1.js'></script>
+    <script type="text/javascript" src="../scooch/build/scooch.min.js"></script>
+    <script type="text/javascript" src="../jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../scooch/build/scooch.min.css" />
+    <link rel="stylesheet" href="../scooch/build/scooch-style.min.css" />
+    <link rel="stylesheet" href="../jquery-mobile/jquery.mobile-1.4.5.min.css" />
+
+    <script>
+    $(document).ready(function(){
+      $('.m-scooch').scooch();
+    })
+    </script>
+  </head>
+  <body>
+    <!-- the viewport -->
+    <div class="m-scooch m-fluid m-scooch-photos">
+      <!-- the slider -->
+      <div class="m-scooch-inner">
+        <!-- the items -->
+        <div class="m-item m-active">
+          <img src="../img/CarouselImg/pysaass/p1.png">
+        </div>
+        <div class="m-item">
+          <img src="../img/CarouselImg/pysaass/p2.png">
+        </div>
+        <div class="m-item">
+          <img src="../img/CarouselImg/pysaass/p3.png">
+        </div>
+      </div>
+      <!-- the controls -->
+      <div class="m-scooch-controls m-scooch-bulleted">
+        <!-- <a href="#" data-m-slide="prev">Previous</a> -->
+        <a href="#" data-m-slide="1" class="m-active">1</a>
+        <a href="#" data-m-slide="2">2</a>
+        <a href="#" data-m-slide="3">3</a>
+        <!-- <a href="#" data-m-slide="next">Next</a> -->
+      </div>
+    </div>
+  </body>
+</html>

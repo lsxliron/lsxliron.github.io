@@ -2,7 +2,7 @@
 layout: mobile
 ---
 
-<div id="welcomePage" class='firstPage page'>
+<div id="welcomePage" class='page'>
 	<div class="container centerDiv">
 		<h1 style="margin-top:30%">Liron Shimrony</h1>
 	
@@ -10,4 +10,268 @@ layout: mobile
 	
 		<a style="margin-top:20%;" id="getStartedBtn" type="button" class="getStartedButton btn btn-primary"><span style="margin-right:5%"class="glyphicon glyphicon-chevron-down"></span>Get Started</a>
 	</div>
+
+	<label class="swipeForMenuLabel">Swipe from left to right to expose the menu</label>
 </div>
+
+
+<div id="aboutMePage" class="page">
+	<div class="container centerDiv">
+		
+		<div style="margin-top:30px">
+			<i id="aboutMeHeader" class="fa fa-user">&nbsp A LITTLE BIT ABOUT MYSELF</i>
+			<div id="aboutMeBox" class="container">
+				<h3 class="greyBox aboutMeText">
+					My name is Liron Shimrony. I studied Computer Science at City College of New York. On my free time I like to build web applications using Python and Javascript.
+				</h3>
+			</div>
+			<button id="projectsBtn"type="button" class='btn btn-primary portfolioButton'>View My Portfolio</button>
+		</div>
+	</div>
+</div>
+
+
+<div id="protfolioPage" class="page">
+	<label class="webPortfolioHeading">Web Portfolio</label>
+	
+	<div class="centerDiv">
+		<a data-toggle="modal" data-target="#pysaassModal"> 
+			<img id='pyssaass' class='webPortfolioImage' src="../img/p1.png" style="z-index" />
+		</a>
+	
+		<a data-toggle="modal" data-target="#gobbletModal">	
+			<img id"gobblet" class='webPortfolioImage' src="../img/gobblet1.png"/>
+		</a>
+	</div>
+
+	<div style="position:relative; width:100%; text-align:center">
+		<button type="button" class="webPortfolioButton btn btn-primary" id="webPortfolioBtn">Other Projects</a>
+	</div>
+</div>
+
+
+<div id="programmingProjects" class="page" >
+	<label class="webPortfolioHeading" >Programming Projects</label>
+
+		<div class="programmingProjectsDiv">
+			<a href="http://hiqsolver-csc44800.rhcloud.com" target="_blank">
+				<i class="fa fa-globe fa-2x"></i>
+				Peg Solitaire (Hi Q) Solver
+			</a>
+		</div>
+
+			<div class="programmingProjectsDiv">
+				<a href="https://github.com/lsxliron/BookBay" target="_blank">
+					<i class="fa fa-github-alt fa-2x"></i>
+					BookBay
+				</a>
+			</div>
+		
+		
+		
+			<div class="programmingProjectsDiv">
+				<a href="http://www.github.com/lsxliron/PowerCalc" target="_blank">
+					<i class="fa fa-github-alt fa-2x"></i>
+					PowerCalc
+				</a>
+			</div>
+			
+			<div class="programmingProjectsDiv">
+				<a href="https://github.com/lsxliron/Euler" target="_blank">
+					<i class="fa fa-github-alt fa-2x"></i>
+					Project Euler
+				</a>
+			</div>
+
+		
+
+	
+	<div style="text-align:center; width:100%"><button type="button" class="webPortfolioButton btn btn-primary" id="programmingProjectsButton">Any Questions?</button></div>
+
+</div>
+
+
+<div id="contactMePage" class="page">
+	<div class="contactDiv">
+		<i class="fa fa-envelope fa-2x"><label class="contactLabel"> Contact Me</label></i>
+	</div>
+	<div class="contactDiv">
+		<a href="mailto:lsxliron@gmail.com"><label class="emailLabel">LSXLIRON@GMAIL.COM</label></a>
+	</div>
+</div>
+
+
+<div id="profilesPage" class="page">
+	<label class="webPortfolioHeading" style="margin-bottom:10%">My Porjects And Profile</label>
+	<div class="glyphDiv">
+		<a href="http://www.github.com/lsxliron" class="profilesIcons" target="_blank"><i style="color:white;" class="fa fa-github fa-4x"></i></a>
+		<a href="http://www.bitbucket.org/lsxliron" class="profilesIcons" target="_blank"><i style="color:white; margin-left:50px;" class="fa fa-bitbucket fa-4x"></i></a>
+		<a href="http://www.linkedin.com/pub/liron-shimrony/48/427/b7/" class="profilesIcons" target="_blank"><i style="color:white;margin-left:70px;" class="fa fa-linkedin-square fa-4x"></i></a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div id="mobile-header">
+    <a id="menuButton" href="#sidr-main"></a>
+</div> -->
+ 
+<div id="menuOptions">
+    <nav class="nav">
+        <ul>
+        <a> <li id="welcomePageLi" style="color:white"> <i class="fa fa-thumbs-up"> </i>&nbsp Welcome </li></a>
+		<a> <li id="aboutMeLi" style="color:white"> <i class="fa fa-user"> </i> &nbsp About Me </li></a>
+		<a> <li id="portfolioLi" style="color:white"> <i class="fa fa-picture-o"> &nbsp </i>Portfolio </li></a>
+		<a> <li id="projectsLi" style="color:white"> <i class="fa fa-flask"></i> &nbsp Projects </li></a>
+		<a> <li id="contactLi" style="color:white"> <i class="fa fa-envelope"> </i> &nbsp Contact </li></a>
+		<a> <li id="linksLi" style="color:white"> <i class="fa fa-link"></i> &nbsp Links </li></a>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+<!--######################################################################################################################## -->
+<!--###############################################     MODAL FORMS     #################################################### -->
+<!--######################################################################################################################## -->
+
+
+<!-- PYSAASS MODAL -->
+<div class="modal fade" id="pysaassModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Semi Automatic Statistical Segmentation Tool</h4>
+      </div>
+      <div class="modal-body">
+        <!-- START CONTENT -->
+			<div class="m-scooch m-fluid m-scooch-photos">
+						<!-- the slider -->
+						<div class="m-scooch-inner">
+							<!-- the items -->
+					<div class="m-item m-active">
+						<img src="../img/CarouselImg/pysaass/p1.png">
+						<label class="carLabel">
+							<h3>Inspect Organs</h3>
+							<p>View medical images in 3 different views with multiple modalities<br>
+							(axial, coronal, sagittal and 3D model)</p>
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/pysaass/p2.png">
+						<label class="carLabel">
+						<h3>Easy segmentation</h3>
+						<p>Easily mark brush strokes on the desired structure</p>
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/pysaass/p3.png">
+						<label class="carLabel">
+							<h3>Immidiate Result</h3>
+							<p>Segment the selected structure in no time</p>
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/pysaass/p4.png">
+						<label class="carLabel">
+							<h3>Export Data</h3>
+							<p>Export data to the universal RTStruct foramt</p>
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/pysaass/p5.png">
+						<label class="carLabel">
+							<h3>Differentiate Modalities</h3>
+							<p>Apply different colors to different modalities</p>
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/pysaass/p6.png">
+						<label class="carLabel">
+						<h3>Easy Studies Management</h3>
+						<p>Create and management studies</p>
+						</label>
+					</div>
+
+				</div>
+				<!-- the controls -->
+				<div class="m-scooch-controls m-scooch-bulleted">
+					<a href="#" data-m-slide="1" class="m-active">1</a>
+					<a href="#" data-m-slide="2">2</a>
+					<a href="#" data-m-slide="3">3</a>
+					<a href="#" data-m-slide="4">4</a>
+					<a href="#" data-m-slide="5">5</a>
+					<a href="#" data-m-slide="6">6</a>
+				</div>
+			</div>
+        <!-- END CONTENT -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
+
+
+
+
+<!-- GOBBLET MODAL -->
+<div class="modal fade" id="gobbletModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gobblet: Human Vs. PC</h4>
+      </div>
+      <div class="modal-body">
+        <!-- START CONTENT -->
+			<div class="m-scooch m-fluid m-scooch-photos">
+						<!-- the slider -->
+						<div class="m-scooch-inner">
+							<!-- the items -->
+					<div class="m-item m-active">
+						<img src="../img/CarouselImg/gobblet/g1.png">
+						<label class="carLabel">
+							4 Layers Tic Tac Toe Game
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/gobblet/g2.png">
+						<label class="carLabel">
+							Human Vs. PC
+						</label>
+					</div>
+
+					<div class="m-item">
+						<img src="../img/CarouselImg/gobblet/g3.png">
+						<label class="carLabel">
+							Simple and Friendly GUI
+						</label>
+					</div>
+
+				</div>
+				<!-- the controls -->
+				<div class="m-scooch-controls m-scooch-bulleted">
+					<a href="#" data-m-slide="1" class="m-active">1</a>
+					<a href="#" data-m-slide="2">2</a>
+					<a href="#" data-m-slide="3">3</a>
+				</div>
+			</div>
+        <!-- END CONTENT -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
