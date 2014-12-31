@@ -96,3 +96,9 @@ $(document).ready(function(){
 	})
 	
 })//END READY
+
+//Web prohect background size
+$(window).bind('load', function(){
+	$('.shaderDiv').height($('img').height());
+	$('.shaderDiv').width($('img').width());
+})
