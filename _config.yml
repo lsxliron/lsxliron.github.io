@@ -10,3 +10,7 @@ github_username:  lsxliron
 # Build settings
 markdown: kramdown
 port: "8001"
+
+
+gems:
+    - jekyll-redirect-from
