@@ -4,8 +4,6 @@
 }
 
 .page{
-	/*width: 1366px;
-	height: 768px;*/
 	width: 100%;
 	height: 100%;
 }
@@ -22,19 +20,12 @@
 	text-align:center;
 }
 
-.nameHeader{
-	font-size:450%;
-}
-
 .descriptionHeader{
 	font-size: 250%;
 	margin-top: 3%;
 	margin-bottom: 3%;
 }
 
-.secondPage{
-	background-color:#333;
-}
 
 .getStartedButton{
 	margin-top:1%;
@@ -44,18 +35,13 @@
 }
 
 .portfolioButton{
-	/*margin-top:3%;*/
 	margin-top: 13%;
-	width:15%; 
+	width:18%; 
 	height:4%;
-	/*color:#000000;*/
 	vertical-align: middle;
 	letter-spacing: 3px;
 	font-family: 'Alegreya', sans-serif;
-	/*font-family: "Georgia", serif;*/
-	/*font-family: 'Roboto Slab', serif;*/
 	font-size:2vh;
-	
 }
 
 .aboutMeDiv{
@@ -87,21 +73,12 @@
 	background-image: url("../img/lighter.png")
 }
 
-.portfolio{
-	background-image: url("../img/background/classy_fabric.png")
-}
-
 .projectsTable{
 	border-spacing: 10px;
 	display:table;
 	width:90%;
 	position:relative;
 	top:1%;
-	/*bottom:0px;*/
-	/*left:0px;
-	right:0px;
-	margin:auto;*/
-
 }
 
 .tableImg{
@@ -120,15 +97,7 @@
 	width:100%; 
 	font-family: 'Alegreya Sans SC', serif;
 	font-weight: 200;
-	/*font-size: 5em;*/
 	letter-spacing: 4.5px;
-	/*font-variant: small-caps;*/
-
-
-
-	/*white-space: 3px;*/
-	/*margin-bottom: 2%;*/
-	/*display:table-cell;*/
 	position:relative;
 }
 
@@ -149,40 +118,15 @@
 	cursor: default; 
 	line-height: 2.00;
 }
+
 .hover-active:hover {
   cursor: pointer;
   background: rgba(80, 160, 250, .50);
 }
+
 .hover:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, .20);
-}
-
-/*p, blockquote {*/
-  
-/*}*/
-
-blockquote {
-font-family: 'Roboto Slab', serif;
-  background: rgba(60, 71, 81, 0.2);
-  border: 1px dashed #888888;
-  box-shadow: 5px 5px 5px #0c0c0c;
-  letter-spacing: 2px;
-  font-size: 3em;
-  text-align: left;
-  vertical-align: middle;
-
-}
-h2{
-	
-}
-h3{
-	
-	font-family: 'Roboto Slab', serif;
-	letter-spacing: 3px;
-	color: #fcfcfc;
-	cursor: default;
-	margin: auto;
 }
 
 .aboutMeText{
@@ -193,18 +137,8 @@ h3{
 	font-weight: lighter;
 	letter-spacing: 2.5px;
 	margin-left: 25px;
-
 }
 
-i{margin-right: 10px;}
-.programmingProjectsPage{
-	background-image: url('../img/background/binding_dark.png')
-}
-a:link{color:#FFFFFF;}
-a:visited{color:#FFFFFF;}
-a:hover{text-decoration: none;}
-.pysaassID{}
-.gobbletID{}
 .aboutMeLBL{
 	margin-top: 5%;
 	margin-left:20px;
@@ -256,7 +190,6 @@ a:hover{text-decoration: none;}
 .contactLabel
 {
 	font-family: 'Alegreya Sans SC', serif;
-	/*font-family: 'Roboto Slab', sans-serif;*/
 	color:white; 
 	font-size:3em; 
 	font-variant: small-caps;
@@ -265,20 +198,6 @@ a:hover{text-decoration: none;}
 	font-weight: lighter;
 	position:relative;
 	text-align:center
-
-}
-
-.profilesPage{
-	background-image: url('../img/background/binding_dark.png')
-
-}
-
-.sideMenuItem{
-	cursor: pointer;
-}
-
-li:hover{
-	background: rgba(80, 160, 250, .50)
 }
 
 .sideBarDiv{
@@ -299,18 +218,71 @@ li:hover{
 	position:fixed;
 }
 
-.menuButton:hover{
-background: rgba(80, 160, 250, .50)
-}
-
-i{color:white;}
-
 .programmingProjectsDiv{
 	display:table-cell;
 	width:50%;
 }
 
-
-.carousel-caption {
-  margin-bottom:3%;
+#gobbletImg{
+	margin-left:32%; 
+	margin-top:19%;
 }
+
+#otherButtonDiv{
+	position:relative; 
+	width:100%; 
+	text-align:center;
+}
+#programmingProjectsTable{
+	display:table;
+	color:white; 
+	border-collapse: separate; 
+	border-spacing:20px; 
+	width:100%;
+	text-align:center; 
+	margin-top:5%;
+}
+
+blockquote {
+font-family: 'Roboto Slab', serif;
+  background: rgba(60, 71, 81, 0.2);
+  border: 1px dashed #888888;
+  box-shadow: 5px 5px 5px #0c0c0c;
+  letter-spacing: 2px;
+  font-size: 3em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+h3{	
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 3px;
+	color: #fcfcfc;
+	cursor: default;
+	margin: auto;
+}
+
+i{
+	margin-right: 10px;
+	color:white;
+}
+
+.carButtons{display: none;}
+.carousel-caption { margin-bottom:3%;}
+.profilesPage{background-image: url('../img/background/binding_dark.png')}
+.sideMenuItem{cursor: pointer;}
+.programmingProjectsPage{background-image: url('../img/background/binding_dark.png')}
+.pysaassID{}
+.gobbletID{}
+.portfolio{background-image: url("../img/background/classy_fabric.png")}
+.nameHeader{font-size:450%;}
+.secondPage{background-color:#333;}
+.menuButton:hover{background: rgba(80, 160, 250, .50)}
+
+#aboutMeInnerDiv{margin-top:30px;}
+
+li{color:white;}
+li:hover{background: rgba(80, 160, 250, .50)}
+a:link{color:#FFFFFF;}
+a:visited{color:#FFFFFF;}
+a:hover{text-decoration: none;}

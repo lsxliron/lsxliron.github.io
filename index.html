@@ -2,21 +2,23 @@
 layout: custom
 ---
 
+<!-- SIDEBAR -->
 <div class="toggled" id="wrapper">
 	<div id="sidebar-wrapper" class="sidebarDiv">
 		<ul class="sidebar-nav" style="margin-top:25%">
-		<a class="sideMenuItem" id="welcomePageLi"><li style="color:white"> <i class="fa fa-thumbs-up"> </i>Welcome</li></a>
-		<a class="sideMenuItem" id="aboutMeLi"> <li style="color:white"> <i class="fa fa-user"> </i> About Me</li></a>
-		<a class="sideMenuItem" id="portfolioLi"><li style="color:white"> <i class="fa fa-picture-o"> </i>Portfolio</li></a>
-		<a class="sideMenuItem" id="projectsLi"><li style="color:white"> <i class="fa fa-flask"></i> Projects</li></a>
-		<a class="sideMenuItem" id="contactLi"><li style="color:white"> <i class="fa fa-envelope"> </i>Contant</li></a>
-		<a class="sideMenuItem" id="linksLi"><li style="color:white"> <i class="fa fa-link"></i> Links</li></a>
+		<a class="sideMenuItem" id="welcomePageLi"><li> <i class="fa fa-thumbs-up"> </i> Welcome </li></a>
+		<a class="sideMenuItem" id="aboutMeLi"> <li> <i class="fa fa-user"> </i> About Me </li></a>
+		<a class="sideMenuItem" id="portfolioLi"><li> <i class="fa fa-picture-o"> </i>Portfolio </li></a>
+		<a class="sideMenuItem" id="projectsLi"><li> <i class="fa fa-flask"></i> Projects </li></a>
+		<a class="sideMenuItem" id="contactLi"><li> <i class="fa fa-envelope"> </i>Contact </li></a>
+		<a class="sideMenuItem" id="linksLi"><li> <i class="fa fa-link"></i> Links</li> </a>
 		</ul>
 	</div>
 </div>
 
 <button id="menuToggle" type="button" class="btn menuButton"> <i class="fa fa-bars"></i> </button>
 
+<!-- WELCOME PAGE -->
 <div id="welcomePage" class='firstPage page'>
 	<div class="container centerDiv">
 		<h1 class="nameHeader">Liron Shimrony</h1>
@@ -27,11 +29,11 @@ layout: custom
 	</div>
 </div>
 
-
+<!-- ABOUT ME PAGE -->
 <div id="aboutMePage" class="page secondPage">
 	<div class="container aboutMeDiv">
 		
-		<div style="margin-top:30px">
+		<div id="aboutMeInnerDiv">
 			<i class="fa fa-user fa-4x"><label class="aboutMeLBL"><span style="font-size:5vh; font-weight:250">A</span> LITTLE BIT ABOUT MYSELF</label></i>
 			<div class="container aboutMeBox">
 				<h3 class="aboutMeText">
@@ -43,54 +45,43 @@ layout: custom
 	</div>
 </div>
 
-
+<!-- WEB PROTFOLIO PAGE -->
 <div id="protfolioPage" class="page portfolio">
 	<label class="webPortfolioHeading">Web Portfolio</label>
 	<div class="container projectsTable">
 		<div style="display:table-row">
+			
 			<div style="display:table-cell">
-			<!-- <div class="shaderDiv"> -->
-				<!-- <div class="projectLabelDiv pysaassID"> -->
-					<!-- Semi Automatic Statistical Segmentation Tool -->
-				<!-- </div> -->
-				
 				<div class="shaderDiv pysaassID">
 					<span style="display:inline-block">
 					<label class="projectLabelDiv"> Semi Automatic Statistical Segmentation Tool</label>
 						<img id='pyssaass' class='tableImg' src="img/p1.png" style="z-index" />
 					</span>
 				</div>
-
-				
 			</div>
 
 			<div style="display:table-cell;>">
-			<!-- <div class="shaderDiv"> -->
-				<!-- <div class="projectLabelDiv gobbletID"> -->
-					<!-- Gobblet -->
-				<!-- </div> -->
 				<div class="shaderDiv gobbletID">
 					<span style="display:inline-block">
-					<label class="projectLabelDiv" style="margin-left:32%; margin-top:19%;"> Gobblet <br> Human Vs. PC </label>
+					<label class="projectLabelDiv" id="gobbletImg"> Gobblet <br> Human Vs. PC </label>
 						<img class='tableImg' src="img/gobblet1.png"/>
 					</span>
 				</div>
-				
 			</div>
 		</div>
 	</div>
-	<div style="position:relative; width:100%; text-align:center">
+	<div id="otherButtonDiv">
 		<button type="button" class="webPortfolioButton btn btn-primary" id="webPortfolioBtn">Other Projects</a>
 	</div>
 </div>
 
 
 
-
+<!-- PROGRAMMING PROJECTS -->
 <div id="programmingProjects" class="page programmingProjectsPage" >
 	<label class="webPortfolioHeading" >Programming Projects</label>
 
-	<div style="display:table;color:white; border-collapse: separate; border-spacing:20px; width:100%;text-align:center; margin-top:5%">
+	<div id="programmingProjectsTable">
 		
 		<div style="display:table-row;">
 
@@ -141,9 +132,9 @@ layout: custom
 
 
 
-
+<!-- CONTACT ME PAGE -->
 <div id="contactMePage" class="page secondPage">
-<label class="contactLabel" style="margin-top:15%"><i class="fa fa-envelope"></i>Contact Me</label>
+<label id="contactMeLabel" class="contactLabel" style="margin-top:15%"><i class="fa fa-envelope"></i>Contact Me</label>
 <label class="contactLabel" style="margin-top:3%">LSXLIRON@GMAIL.COM</label>
 </div>
 </div>
@@ -151,26 +142,23 @@ layout: custom
 
 
 
-
+<!-- PROFILES AND LINKS PAGE -->
 <div id="profilesPage" class="page profilesPage">
 	<label class="webPortfolioHeading" style="margin-bottom:10%">My Porjects And Profile</label>
 	<div style="width:100%; text-align:center">
-		<a href="http://www.github.com/lsxliron" class="profilesIcons" target="_blank"><i style="color:white;" class="fa fa-github fa-5x"></i></a>
-		<a href="http://www.bitbucket.org/lsxliron" class="profilesIcons" target="_blank"><i style="color:white; margin-left:50px;" class="fa fa-bitbucket fa-5x"></i></a>
-		<a href="http://www.linkedin.com/pub/liron-shimrony/48/427/b7/" class="profilesIcons" target="_blank"><i style="color:white;margin-left:70px;" class="fa fa-linkedin-square fa-5x"></i></a>
+		<a href="http://www.github.com/lsxliron" class="profilesIcons" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+		<a href="http://www.bitbucket.org/lsxliron" class="profilesIcons" target="_blank"><i style="margin-left:50px;" class="fa fa-bitbucket fa-5x"></i></a>
+		<a href="http://www.linkedin.com/pub/liron-shimrony/48/427/b7/" class="profilesIcons" target="_blank"><i style="margin-left:70px;" class="fa fa-linkedin-square fa-5x"></i></a>
+	</div>
 </div>
-</div>
-
-
-
 
 
 
 <!-- Button trigger modal -->
-<button type="button" id="pysaassCarouselBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pysaassModal" style="display:none"></button>
+<button type="button" id="pysaassCarouselBtn" class="btn btn-primary btn-lg carButtons" data-toggle="modal" data-target="#pysaassModal"></button>
 
 <!-- Button trigger modal -->
-<button type="button" id="gobbletCarouselBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gobbletModal" style="display:none"></button>
+<button type="button" id="gobbletCarouselBtn" class="btn btn-primary btn-lg carButtons" data-toggle="modal" data-target="#gobbletModal"></button>
 
 
 
@@ -181,7 +169,7 @@ layout: custom
 
 
 
-
+<!-- ############## MODALS AND CAROUSELS ############## -->
 
 
 
@@ -315,130 +303,3 @@ layout: custom
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-$(document).ready(function(){
-	if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
-		window.location.replace('http://lsxliron.github.io/mobile')
-	$('#welcomePageLi').bind('click',function(){
-		$('body').animate({
-				scrollTop:  0}, 1000)
-	});
-
-	$('#getStartedBtn, #aboutMeLi').bind('click',function(){
-		$('body').animate({
-				scrollTop:  $('#aboutMePage').offset().top}, 1000)
-	});
-
-	$('#projectsBtn, #portfolioLi').bind('click',function(){
-		$('body').animate({
-				scrollTop: $('#protfolioPage').offset().top}, 1000)
-	});
-
-	$('#webPortfolioBtn, #projectsLi').bind('click',function(){
-		$('body').animate({
-				scrollTop: $('#programmingProjects').offset().top}, 1000)
-	});
-
-	$('#programmingProjectsBtn, #contactLi').bind('click',function(){
-		$('body').animate({
-				scrollTop: $('#contactMePage').offset().top}, 1000)
-	});
-
-	$('#linksLi').bind('click',function(){
-		$('body').animate({
-				scrollTop: $('#profilesPage').offset().top}, 1000)
-	});
-
-
-
-
-	
-
-	
-	$('.tableImg').hover(function(){
-		$(this).transition({rotateX:'180deg', opacity:0})
-		$(this).parents('.shaderDiv').transition({rotateX:'180deg'})
-		$(this).siblings('.projectLabelDiv').transition({rotateX:'180deg', opacity:1})
-	},
-		function(){
-			$(this).transition({rotateX:'0deg', opacity:1})
-			$(this).parents('.shaderDiv').transition({rotateX:'0deg'})
-			$(this).siblings('.projectLabelDiv').transition({rotateX:'0deg', opacity:0})
-		}
-	)
-
-	//Project label fade out handler
-	// $('.projectLabelDiv').mouseout(function(){
-	// 	$(this).animate({opacity: 0}, 500);
-	// 	$(this).parent().children('.tableImg').animate({opacity: 1}, 500, function(){
-	// 		$(this).parent().children('.projectLabelDiv').css('visibility', 'hidden')
-	// 	});
-
-	// });
-		
-	$('.pysaassID').bind('click',function(){
-		$(this).children().find('.tableImg').trigger('mouseleave')
-		$('#pysaassCarouselBtn').click();
-
-	})
-
-	$('.gobbletID').bind('click',function(){
-		$(this).children().find('.tableImg').trigger('mouseleave')
-		$('#gobbletCarouselBtn').click();
-
-	})
-
-	$(".descriptionHeader").hover(function(){
-		$(this).transition({scale:1.2})
-	}, 
-	function(){
-		$(this).transition({scale:1})
-	});
-
-	$(".profilesIcons").hover(function(){
-		$(this).children().transition({rotate:45})
-
-	},
-	function(){
-		$(this).children().transition({rotate:0})
-	})
-
-	$('#menuToggle').bind('click',function(e){
-		 e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        if ($(this).children()[0].className=='fa fa-caret-left fa')
-        	$(this).children()[0].className='fa fa-bars'
-        else
-        	$(this).children()[0].className='fa fa-caret-left fa'
-
-	})
-
-
-	$('.programmingProjectsDiv').click(function(){
-		var bq = $(this).children()[0]
-		var lnk = bq.children[0]
-		lnk.click()
-	})
-	
-})//END READY
-
-
-$(window).bind('load', function(){
-	$('.shaderDiv').height($('img').height())
-	$('.shaderDiv').width($('img').width())
-
-
-})
-</script>
-
