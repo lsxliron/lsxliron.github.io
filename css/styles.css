@@ -3,6 +3,17 @@
 	src:url('../fonts/AlegreyaSC-Regular.otf');
 }
 
+@font-face{
+	font-family: 'Roboto';
+	src:url('../fonts/RobotoSlab-Regular.ttf');	
+}
+
+@font-face{
+	font-family: 'Andika';
+	src:url('../fonts/AndBasR.ttf');
+	
+}
+
 .page{
 	width: 100%;
 	height: 100%;
@@ -24,14 +35,16 @@
 	font-size: 250%;
 	margin-top: 3%;
 	margin-bottom: 3%;
+	font-family: "Alegreya"
 }
 
 
 .getStartedButton{
 	margin-top:1%;
-	width:200px; 
-	height:35px;
+	width:250px; 
+	height:50px;
 	position: relative;
+	font-size: 23px;
 }
 
 .portfolioButton{
@@ -40,7 +53,7 @@
 	height:4%;
 	vertical-align: middle;
 	letter-spacing: 3px;
-	font-family: 'Alegreya', sans-serif;
+	font-family: 'Andika';
 	font-size:2vh;
 }
 
@@ -95,7 +108,6 @@
 	border-radius: 20px;
 	background-color: black;
 	width:100%; 
-	font-family: 'Alegreya Sans SC', serif;
 	font-weight: 200;
 	letter-spacing: 4.5px;
 	position:relative;
@@ -108,7 +120,7 @@
 	color:white; 
 	text-align:center; 
 	margin-top:15%; 
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Andika';
 	letter-spacing: 5px;
 	font-weight: 100;
 	font-size:2em;
@@ -117,6 +129,8 @@
 .lead {
 	cursor: default; 
 	line-height: 2.00;
+	font-family: "Andika";
+	font-style: normal;
 }
 
 .hover-active:hover {
@@ -131,25 +145,26 @@
 
 .aboutMeText{
 	text-align: left;
-	white-space: 7px;
+	/*white-space: 7px;*/
 	line-height: 35px;
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 	letter-spacing: 2.5px;
 	margin-left: 25px;
+	/*letter-spacing: 4px;*/
 }
 
 .aboutMeLBL{
 	margin-top: 5%;
 	margin-left:20px;
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Alegreya';
 	letter-spacing: 4px;
 	font-size:4vh;
-	font-weight: 500;
+	/*font-weight: 500;*/
 }
 
 .webPortfolioHeading{
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Alegreya';
 	color:#CCCCCC; 
 	margin-top:3%;
 	font-size:4em;
@@ -167,7 +182,7 @@
 	max-height:5%;
 	color:#FFFFFF;
 	vertical-align: middle;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Andika';
 	font-variant: small-caps;
 	font-size:2em;
 	letter-spacing: 2px;
@@ -181,7 +196,7 @@
 	max-height:6%;
 	color:#FFFFFF;
 	vertical-align: middle;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Andika';
 	font-variant: small-caps;
 	font-size:2em;
 	letter-spacing: 4px;
@@ -189,7 +204,7 @@
 
 .contactLabel
 {
-	font-family: 'Alegreya Sans SC', serif;
+	font-family: 'Alegreya';
 	color:white; 
 	font-size:3em; 
 	font-variant: small-caps;
@@ -244,11 +259,11 @@
 }
 
 blockquote {
-font-family: 'Roboto Slab', serif;
+font-family: 'Roboto';
   background: rgba(60, 71, 81, 0.2);
   border: 1px dashed #888888;
   box-shadow: 5px 5px 5px #0c0c0c;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 3em;
   text-align: left;
   vertical-align: middle;
@@ -275,9 +290,10 @@ i{
 .pysaassID{}
 .gobbletID{}
 .portfolio{background-image: url("../img/background/classy_fabric.png")}
-.nameHeader{font-size:450%;}
+.nameHeader{font-size:450%;font-family: "Alegreya"}
 .secondPage{background-color:#333;}
 .menuButton:hover{background: rgba(80, 160, 250, .50)}
+.btn{font-family: "Andika"}
 
 #aboutMeInnerDiv{margin-top:30px;}
 
@@ -286,3 +302,5 @@ li:hover{background: rgba(80, 160, 250, .50)}
 a:link{color:#FFFFFF;}
 a:visited{color:#FFFFFF;}
 a:hover{text-decoration: none;}
+
+#emailLBL{font-family: "Roboto"}
