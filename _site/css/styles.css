@@ -48,13 +48,13 @@
 }
 
 .portfolioButton{
-	margin-top: 13%;
+	margin-top: 10%;
 	width:18%; 
-	height:4%;
+	height:8%;
 	vertical-align: middle;
 	letter-spacing: 3px;
 	font-family: 'Andika';
-	font-size:2vh;
+	font-size:120%;
 }
 
 .aboutMeDiv{
@@ -78,7 +78,7 @@
 
 .aboutMeBox{
 	max-width:40%;
-	margin-top: 15%;
+	margin-top: 8%;
 	font-family: "Georgia", serif;
 	border-style: dashed;
 	border-width: 1px;
@@ -179,7 +179,7 @@
 	position:relative;
 	margin-top:2%;
 	width:20%; 
-	max-height:5%;
+	max-height:9%;
 	color:#FFFFFF;
 	vertical-align: middle;
 	font-family: 'Andika';
@@ -192,13 +192,13 @@
 .questionsButton{
 	position:relative;
 	margin-top:2%;
-	max-width:20%; 
-	max-height:6%;
+	max-width:25%; 
+	max-height:10%;
 	color:#FFFFFF;
 	vertical-align: middle;
 	font-family: 'Andika';
 	font-variant: small-caps;
-	font-size:2em;
+	font-size:130%;
 	letter-spacing: 4px;
 }
 
