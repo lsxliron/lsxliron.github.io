@@ -48,8 +48,8 @@
 }
 
 .portfolioButton{
-	margin-top: 7%;
-	width:18%; 
+	margin-top: 13%;
+	width:20%; 
 	height:8%;
 	vertical-align: middle;
 	letter-spacing: 3px;
@@ -178,8 +178,8 @@
 .webPortfolioButton{
 	position:relative;
 	margin-top:2%;
-	width:26%; 
-	max-height:60%;
+	width:20%; 
+	max-height:10%;
 	color:#FFFFFF;
 	vertical-align: middle;
 	font-family: 'Andika';
@@ -192,7 +192,7 @@
 .questionsButton{
 	position:relative;
 	margin-top:2%;
-	max-width:25%; 
+	max-width:22%; 
 	max-height:10%;
 	color:#FFFFFF;
 	vertical-align: middle;
