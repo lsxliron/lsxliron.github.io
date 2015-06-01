@@ -12,5 +12,5 @@ markdown: kramdown
 port: "8001"
 
 
-# gems:
-#     - jekyll-redirect-from
+gems:
+    - jekyll-redirect-from

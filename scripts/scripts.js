@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	//Naviage to mobile site
-	// if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
-		// window.location.replace('http://lsxliron.github.io/mobile')
+	if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
+		window.location.replace('http://lsxliron.github.io/mobile')
 
 	//Animate scrolling to anchor tags from buttons and menu items
 	$('#welcomePageLi').bind('click',function(){
