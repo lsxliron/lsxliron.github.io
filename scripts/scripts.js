@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	
+
 	//Naviage to mobile site
-	if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
-		window.location.replace('http://lsxliron.github.io/mobile')
-	
+	// if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
+		// window.location.replace('http://lsxliron.github.io/mobile')
+
 	//Animate scrolling to anchor tags from buttons and menu items
 	$('#welcomePageLi').bind('click',function(){
 		$('body').animate({scrollTop:  0}, 1000)
@@ -42,8 +42,8 @@ $(document).ready(function(){
 			$(this).siblings('.projectLabelDiv').transition({rotateX:'0deg', opacity:0})
 		}
 	)
-	
-	//Flip images back after carousel is open	
+
+	//Flip images back after carousel is open
 	$('.pysaassID').bind('click',function(){
 		$(this).children().find('.tableImg').trigger('mouseleave');
 		$('#pysaassCarouselBtn').click();
@@ -60,12 +60,20 @@ $(document).ready(function(){
 	//Scale labels when mouse hovers
 	$(".descriptionHeader, #contactMeLabel").hover(function(){
 		$(this).transition({scale:1.2});
-	}, 
+	},
 	function(){
 		$(this).transition({scale:1});
 	});
 
-	
+	//Resume link scaling
+	$("#resumeLink").hover(function(){
+		$(this).transition({skewX:'30deg'});
+	},
+	function(){
+		$(this).transition({skewX:'0deg'});
+	});
+
+
 	//Rotate profiles icons
 	$(".profilesIcons").hover(function(){
 		$(this).children().transition({rotate:45});
@@ -94,7 +102,7 @@ $(document).ready(function(){
 		var lnk = bq.children[0];
 		lnk.click();
 	})
-	
+
 })//END READY
 
 //Web prohect background size
