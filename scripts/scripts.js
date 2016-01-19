@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	window.location.replace('http://gagn.io')
 
 	//Naviage to mobile site
 	if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
