@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	window.location.replace('http://gagn.io')
+	window.location.replace('http://liron.io')
 
 	//Naviage to mobile site
 	if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
