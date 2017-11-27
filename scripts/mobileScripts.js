@@ -1,6 +1,6 @@
 $(document).ready(function(){
          // Recirect to new portfolio
-         window.location.replace('http://gagn.io')
+         window.location.replace('http://liron.io')
 
 	//Create image carousel
 	$('.m-scooch').scooch();
