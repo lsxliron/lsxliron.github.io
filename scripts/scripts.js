@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	window.location.replace('http://liron.io')
-
+        return
 	//Naviage to mobile site
 	if (window.navigator.userAgent.toLowerCase().search('mobile.*?')>0)
 		window.location.replace('http://lsxliron.github.io/mobile')
